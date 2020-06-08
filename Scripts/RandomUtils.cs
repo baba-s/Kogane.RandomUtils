@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-namespace UniRandomUtils
+namespace Kogane
 {
 	/// <summary>
 	/// 乱数に関する汎用的な関数を管理するクラス

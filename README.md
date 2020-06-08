@@ -1,11 +1,11 @@
-# Uni Random Utils
+﻿# Uni Random Utils
 
 乱数に関する汎用的な関数を管理するクラス
 
 ## 使用例
 
 ```cs
-using UniRandomUtils;
+using Kogane;
 using UnityEngine;
 
 public sealed class Example : MonoBehaviour
