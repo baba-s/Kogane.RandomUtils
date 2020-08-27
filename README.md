@@ -37,12 +37,38 @@ public sealed class Example : MonoBehaviour
         Debug.Log( RandomUtils.Value0Or1 );
 
         var list = new[] { 1, 2, 3 };
-        
+
         // 指定されたリストの中からランダムに要素を取得
         Debug.Log( RandomUtils.RandomAt( list ) );
-        
-        // 0 から max - 1 の間の整数
+        Debug.Log( RandomUtils.RandomAt( 1, 2, 3 ) );
+
+        // min から max - 1 の間の int 値
         Debug.Log( RandomUtils.Range( 100 ) );
+        Debug.Log( RandomUtils.Range( 0, 100 ) );
+
+        // min から max - 1 の間の byte 値
+        Debug.Log( RandomUtils.RangeByte( 100 ) );
+        Debug.Log( RandomUtils.RangeByte( 0, 100 ) );
+
+        // min から max - 1 の間の short 値
+        Debug.Log( RandomUtils.RangeUshort( 100 ) );
+        Debug.Log( RandomUtils.RangeUshort( 0, 100 ) );
+
+        // min から max - 1 の間の ushort 値
+        Debug.Log( RandomUtils.RangeShort( 100 ) );
+        Debug.Log( RandomUtils.RangeShort( 0, 100 ) );
+
+        // min から max - 1 の間の uint 値
+        Debug.Log( RandomUtils.RangeUint( 100 ) );
+        Debug.Log( RandomUtils.RangeUint( 0, 100 ) );
+
+        // min から max - 1 の間の long 値
+        Debug.Log( RandomUtils.RangeLong( 100 ) );
+        Debug.Log( RandomUtils.RangeLong( 0, 100 ) );
+
+        // min から max - 1 の間の ulong 値
+        Debug.Log( RandomUtils.RangeUlong( 100 ) );
+        Debug.Log( RandomUtils.RangeUlong( 0, 100 ) );
     }
 }
 ```
