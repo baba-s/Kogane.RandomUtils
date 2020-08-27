@@ -119,6 +119,22 @@ namespace Kogane
 		{
 			return ( byte ) Random.Range( min, max );
 		}
+		
+		/// <summary>
+		/// 0 から max - 1 の間の整数をランダムに返します
+		/// </summary>
+		public static short RangeShort( short max )
+		{
+			return ( short ) Random.Range( 0, max );
+		}
+
+		/// <summary>
+		/// min から max - 1 の間の整数をランダムに返します
+		/// </summary>
+		public static short RangeShort( short min, short max )
+		{
+			return ( short ) Random.Range( min, max );
+		}
 
 		/// <summary>
 		/// 0 から max - 1 の間の整数をランダムに返します
