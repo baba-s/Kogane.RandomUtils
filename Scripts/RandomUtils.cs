@@ -97,6 +97,14 @@ namespace Kogane
 		}
 
 		/// <summary>
+		/// min から max - 1 の間の整数をランダムに返します
+		/// </summary>
+		public static int Range( int min, int max )
+		{
+			return Random.Range( min, max );
+		}
+
+		/// <summary>
 		/// 0 から max - 1 の間の整数をランダムに返します
 		/// </summary>
 		public static byte RangeByte( byte max )
@@ -105,11 +113,27 @@ namespace Kogane
 		}
 
 		/// <summary>
+		/// min から max - 1 の間の整数をランダムに返します
+		/// </summary>
+		public static byte RangeByte( byte min, byte max )
+		{
+			return ( byte ) Random.Range( min, max );
+		}
+
+		/// <summary>
 		/// 0 から max - 1 の間の整数をランダムに返します
 		/// </summary>
-		public static ushort RangeUshort( uint max )
+		public static ushort RangeUshort( ushort max )
 		{
-			return ( ushort ) Random.Range( 0, ( int ) max );
+			return ( ushort ) Random.Range( 0, max );
+		}
+
+		/// <summary>
+		/// min から max - 1 の間の整数をランダムに返します
+		/// </summary>
+		public static ushort RangeUshort( ushort min, ushort max )
+		{
+			return ( ushort ) Random.Range( min, max );
 		}
 
 		/// <summary>
@@ -118,6 +142,30 @@ namespace Kogane
 		public static uint RangeUint( uint max )
 		{
 			return ( uint ) Random.Range( 0, ( int ) max );
+		}
+
+		/// <summary>
+		/// min から max - 1 の間の整数をランダムに返します
+		/// </summary>
+		public static uint RangeUint( uint min, uint max )
+		{
+			return ( uint ) Random.Range( ( int ) min, ( int ) max );
+		}
+
+		/// <summary>
+		/// 0 から max - 1 の間の整数をランダムに返します
+		/// </summary>
+		public static long RangeLong( long max )
+		{
+			return Random.Range( 0, ( int ) max );
+		}
+
+		/// <summary>
+		/// min から max - 1 の間の整数をランダムに返します
+		/// </summary>
+		public static long RangeLong( long min, long max )
+		{
+			return Random.Range( ( int ) min, ( int ) max );
 		}
 
 		/// <summary>
@@ -131,9 +179,9 @@ namespace Kogane
 		/// <summary>
 		/// min から max - 1 の間の整数をランダムに返します
 		/// </summary>
-		public static int Range( int min, int max )
+		public static ulong RangeUlong( ulong min, ulong max )
 		{
-			return Random.Range( min, max );
+			return ( ulong ) Random.Range( ( int ) min, ( int ) max );
 		}
 
 		/// <summary>
