@@ -1,4 +1,4 @@
-﻿# Uni Random Utils
+﻿# Kogane Random Utils
 
 乱数に関する汎用的な関数を管理するクラス
 
